@@ -1,0 +1,31 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+body {
+    background-color: #99cce4;
+    margin: 0px auto;
+}   
+
+.imgcontainer {
+    width: 60%;
+    margin: 0px auto;
+}
+
+img {
+    width: 320px;
+    height: 180px;
+    border-width: 5px;
+    margin: 30px 15px;
+    padding: 20px 15px;
+}
+
+.vermelho {
+    color: #f00;
+}
+
+.amarelo {
+    color: #ff0;
+}
+

@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+}
+
+a {
+    margin: 0px 0px 20px;
+}
+
+table.cal {
+    margin: 20px 0px 0px;
+    color: #06425C;
+    border-spacing: 0;
+    border: 3px solid #000;
+    border-radius: 0 0 25px 25px;
+}
+
+tr:nth-child(odd) {
+    background-color: #daf0fc;
+}
+
+tr:nth-child(even) {
+    background-color: #87d5ff;
+}
+
+tr:last-child>td:first-child {
+    border-radius: 0 0 0 25px;
+}
+
+tr:last-child>td:last-child {
+    border-radius: 0 0 25px 0;
+}
+
+tr>td:first-child, tr>td:last-child {
+    color: #900707;
+}
+
+tr:first-child>td:first-child {
+    color: #202020;
+    /*color: #b9b8b8;*/
+}
+
+td:nth-child(even) {
+    border-right: 1px solid #56c4ff;
+    border-left: 1px solid #56c4ff;
+}
+
+.cal caption {
+    text-transform: uppercase;
+    background-color: #2a2a6f;
+    color: #fff;
+    border-radius: 25px 25px 0 0;
+}
+
+.cal th,
+.cal td {
+    margin: 2px;
+    padding: 0px 0px 2px;
+}
+
+th {
+    text-align: center;
+    background-color: #fff;
+}
+
+.cal td {
+    width: 55px;
+    height: 55px;
+    vertical-align: center;
+    text-align: center;
+}
+
+.feriado {
+    background-color: #4d96d3;
+}
+
+.old {
+    background-color: #ced0d0;
+    color: #202020;
+    /*color: #b9b8b8;*/
+}
+
+span {
+    display: none;
+    text-align: center;
+    color: #0e15c1;
+    font-size: 7pt;
+}
+
+td:hover>span {
+    display: block;
+}

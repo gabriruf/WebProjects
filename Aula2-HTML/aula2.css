@@ -1,0 +1,14 @@
+table {
+  width: 100%;
+  border: 1px solid #0026ff;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 50%;
+}

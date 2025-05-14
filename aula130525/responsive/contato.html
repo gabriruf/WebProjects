@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Website feito por Gabriel Rufino de Souza -->
+<!-- Prof. Abinael Gomes Barreiros - Aplicações para Internet -->
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Já Tech! - Seu portal de noticias do mundo da tecnologia</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>"Já Tech!"</h1>
+            <h2>O seu blog de noticias do mundo da tecnologia</h2>
+        </header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="posts.html">Lista de Posts</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <main class="content-wrapper">
+            <article class="main-content-alt">
+                <h1>Formulário para Contato</h1>
+                <p class="content">Precisa reportar um bug?, Gostaria de sugerir alguma funcionalidade nova?, Esta é a página perfeita para você, coloque suas informações abaixo e eu, o dono do site, recebera seu e-mail. </p>
+
+                <form action="https://formsubmit.co/johndoe@johndoe.com" method="POST">
+                    <div class="formBox">
+                        <label for="name">Digite seu nome: </label><br>
+                        <input class="formInput" type="text" id="name" name="name" placeholder="Digite seu nome" size="50" autofocus required><br>
+
+                        <label for="email">Digite o seu e-mail: </label><br>
+                        <input class="formInput" type="email" id="email" name="email" placeholder="Digite seu e-mail" size="50" required><br>
+
+                        <label for="message">Digite sua mensagem aqui: </label><br>
+                        <input class="formInput" type="text" type="text" name="message" id="message" placeholder="Escreva aqui sua mensagem" size="50" maxlength="500" required></input><br>
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input id="btn" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <p>&copy; Já Tech! 2025</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Fonte Roboto */
+
+
+
+
+
+
+
+
+/* Estilização principal */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #53A2BE;
+    color: #333;
+}
+
+header {
+    background-color: #0A2239;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #132E32;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    color: #FFF;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    background-color: #1F3F44;
+}
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content,
+.main-content-alt {
+    flex: 3;
+    background-color: #1D84B5;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main-content-alt {
+    margin: 200px 0px;
+}
+
+.main-content-alt p {
+    text-align: justify;
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+/* Cartões com as notícias */
+.card,
+.card-alt {
+    margin: 40px 15px 15px;
+    padding: 20px 10px;
+    background-color: #2BA0E0;
+}
+
+.card:hover,
+.card-alt:hover {
+    cursor: pointer;
+}
+
+.card img,
+.card-alt img {
+    width: 375px;
+    height: 250px;
+}
+
+.postList {
+    text-align: left;
+}
+
+.dateText {
+    text-align: right;
+}
+
+.dateText sub {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Formulário para contato */
+.formBox {
+    margin: 15px;
+}
+
+.formBox input {
+    background-color: #1F3F44;
+    border: none;
+    padding: 5px;
+    color: #FFF;
+    margin: 5px 0 20px;
+}
+
+#btn {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* Rodapé */
+footer {
+    background-color: #132E32;
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/* @media queries com configurações para responsividade. */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    .main-nav ul {
+        text-align: left;
+    }
+
+    .main-nav li {
+        display: block;
+        border-bottom: 1px solid #555;
+    }
+    
+    .main-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .main-nav a {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+    .main-content {
+        padding: 15px;
+    }
+
+}
